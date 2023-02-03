@@ -1,5 +1,5 @@
 # Dil-Kursu-Otomasyonu
-Algoritma ve Programlamaya Giriş dersi için yaptığım dil kursu otomasyonu ödevi.
+Algoritma ve Programlamaya Giriş dersi için yaptığım dil kursu otomasyonu ödevi.<<enl;
 C++ dili ve basit dosyalama sistemi kullanılarak yapılmış bir projedir.
 Yapılabilecek işlemler sırası ile:
 -Yeni Öğrenci Kaydı 
