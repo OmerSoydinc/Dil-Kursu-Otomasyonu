@@ -1,7 +1,6 @@
-//ISPARTA UYGULAMALI BÝLÝBLER ÜNÝVERSÝTESÝ   TEKNOLOJÝ FAKÜLTESÝ   BÝLGÝSÝYAR MÜHENDÝSLÝÐÝ BÖLÜMÜ   1. SINIF
-//ALGORÝTMA ve PROGRAMLAMAYA GÝRÝÞ DERSÝ PROJE ÖDEVÝ 
-//ÖMER SOYDÝNÇ  2012721018 
-//DÝL KURSU ÖÐRENCÝ ÝÞLERÝ OTOMASYONU
+//ISPARTA UYGULAMALI BILIMLER UNIVERSITESI   
+//ALGORITMA VE PROGRAMLAMAYA GIRIS DERSI ODEVI
+//Ã–MER SOYDÄ°NÃ‡   
 #include<iostream>
 #include<locale.h>
 #include<iomanip>
@@ -29,87 +28,87 @@ int main()
 	bilgiler ogrenci;
 	char secim;
 	
-	cout<<"DÝL KURSU ÖÐRENCÝ ÝÞLERÝ OTOMASYONU"<<endl<<endl;
+	cout<<"DÄ°L KURSU Ã–ÄžRENCÄ° Ä°ÅžLERÄ° OTOMASYONU"<<endl<<endl;
 	
-	{ //------------------------------ÖÐRENCÝ KAYIDI YAPMAK------------------------------
+	{ //------------------------------OGRENCI KAYIDI YAPMAK------------------------------
 	   
 	
 		ofstream dosya("ogrenci.dat", ios::binary);
 	
 	    do
 	    {
-		cout<<"ÖÐRENCÝNÝN ADINI GÝRÝNÝZ:  ";
+		cout<<"OGRENCININ ADINI GIRINIZ:  ";
 		cin>>ogrenci.ad;
 		
 		cout<<endl;
 		
-		cout<<"ÖÐRENCÝNÝN YAÞINI GÝRÝNÝZ:  ";
+		cout<<"OGRENCININ YASINI GIRINIZ:  ";
 		cin>>ogrenci.yas;
 		
 		cout<<endl;
 		
-		cout<<"ÝLKOKUL        "<<endl;
+		cout<<"ILKOKUL        "<<endl;
 		cout<<"ORTAOKUL       "<<endl;
-		cout<<"LÝSE           "<<endl;
-		cout<<"ÜNÝVERSÝTE     "<<endl;
-		cout<<"MEZUN-ÇALIÞAN  "<<endl;
-		cout<<"ÖÐRENCÝNÝN EÐÝTÝM DURUMUNU GÝRÝNÝZ:   ";
+		cout<<"LISE           "<<endl;
+		cout<<"UNIVERSITE     "<<endl;
+		cout<<"MEZUN-Ã‡ALISAN  "<<endl;
+		cout<<"OGRENCININ EGITIM DURUMUNU GIRINIZ:   ";
 		cin>>ogrenci.egitimdurumu;
 		
 		cout<<endl<<endl;
 		
-		cout<<"TÜRKÇE       "<<endl
-	        <<"ÝNGÝLÝZCE    "<<endl
-	        <<"ALMANCA      "<<endl
-	        <<"FRANSIZCA    "<<endl
-	        <<"RUSÇA        "<<endl
-	        <<"ÝSPANYOLCA   "<<endl
-            <<"ÇÝNCE        "<<endl
-	        <<"PORTEKÝZCE   "<<endl
-	        <<"ARAPÇA       "<<endl
-            <<"HÝNTÇE       "<<endl;
-	    cout<<"ÖÐRENCÝNÝN ANADÝLÝNÝ GÝRÝNÝZ:   ";
+		cout<<"TURKCE       "<<endl
+	            <<"INGILIZCE    "<<endl
+	            <<"ALMANCA      "<<endl
+	            <<"FRANSIZCA    "<<endl
+	            <<"RUSCA        "<<endl
+	            <<"ISPANYOLCA   "<<endl
+                    <<"CINCE        "<<endl
+	            <<"PORTEKIZCE   "<<endl
+	            <<"ARAPÃ‡A       "<<endl
+                    <<"HINTÃ‡E       "<<endl;
+	    cout<<"OGRENCININ ANADILINI GIRINIZ:   ";
 		cin>>ogrenci.anadili;
 		
 		cout<<endl<<endl;
 		
-		cout<<"TÜRKÇE       "<<endl
-	        <<"ÝNGÝLÝZCE    "<<endl
-	        <<"ALMANCA      "<<endl
-	        <<"FRANSIZCA    "<<endl
-	        <<"RUSÇA        "<<endl
-	        <<"ÝSPANYOLCA   "<<endl
-            <<"ÇÝNCE        "<<endl
-	        <<"PORTEKÝZCE   "<<endl
-	        <<"ARAPÇA       "<<endl
-            <<"HÝNTÇE       "<<endl;
-		cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ DÝLÝ GÝRÝNÝZ:   ";
+		cout<<"TURKCE       "<<endl
+	            <<"INGILIZCE    "<<endl
+	            <<"ALMANCA      "<<endl
+	            <<"FRANSIZCA    "<<endl
+	            <<"RUSCA        "<<endl
+	            <<"ISPANYOLCA   "<<endl
+                    <<"CINCE        "<<endl
+	            <<"PORTEKIZCE   "<<endl
+	            <<"ARAPÃ‡A       "<<endl
+                    <<"HINTÃ‡E       "<<endl;
+		cout<<"ORENCININ DERS ALMAK ISTEDIGI DILI GIRINIZ:   ";
 		cin>>ogrenci.dersalacagidil;
 		
 		cout<<endl<<endl;
 		
-	    cout<<"A1  (Baþlancýç seviyesi)  "<<endl
-		    <<"A2                        "<<endl
-		    <<"B1                        "<<endl
-		    <<"B2                        "<<endl
-	        <<"C1                        "<<endl
-	        <<"C2  (Ýleri seviye)        "<<endl;
-		cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ DÝL SEVÝYESÝNÝ GÝRÝNÝZ:   ";
+	    cout<< "A1  (Baslangic Seviyesi)  "<<endl
+		<<" A2                        "<<endl
+		<<" B1                        "<<endl
+	    	<<" B2                        "<<endl
+	        <<" C1                        "<<endl
+	        <<" C2  (Ileri seviye)        "<<endl;
+		cout<<"OGRENCININ DERS ALMAK ISTEDIGI DIL SEVIYESINI GIRINIZ:   ";
 		cin>>ogrenci.alacagidildekiseviyesi;
 	    
 		cout<<endl<<endl;
 		
-		cout<<"SAAT 10:00 daki ders için 10   "<<endl
-		    <<"SAAT 14:00 daki ders için 14   "<<endl
-		    <<"SAAT 18:00 daki ders için 18   "<<endl;
-		cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ SAATÝ GÝRÝNÝZ :   ";
+		cout<<" SAAT 10:00 daki ders iÃ§in 10   "<<endl
+		    <<" SAAT 14:00 daki ders iÃ§in 14   "<<endl
+		    <<" SAAT 18:00 daki ders iÃ§in 18   "<<endl;
+		cout<<"OGRENCININ DERS ALMAK ISTEDIGI SAATI GIRINIZ :   ";
 		cin>>ogrenci.derssaati;
 		
 		cout<<endl<<endl;
 		
 		dosya.write(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 		
-		cout<<"BAÞKA ÖÐRENCÝ KAYDETMEK ÝSTER MÝSÝNÝZ ? (EVET=E , HAYIR=H)  : ";
+		cout<<"BASKA OGRENCI KAYDETMEK ISTER MISINIZ ? (EVET=E , HAYIR=H)  : ";
 		secim=getche();
 		
 		system("cls");
@@ -120,7 +119,7 @@ int main()
 	  
 	cout<<endl<<endl;   
 	    
-		//------------------------------KAYIT SAYISINI ÖÐRENME------------------------------
+		//------------------------------KAYIT SAYISINI Ã–ÃRENME------------------------------
 
 
         ifstream dosya;
@@ -130,35 +129,35 @@ int main()
 
         int kayitliogrencisayisi=dosya.tellg()/sizeof(bilgiler);
         
-        cout<<"KURSUNUZA KAYITLI ÖÐRENCÝ SAYISI= "<<kayitliogrencisayisi<<endl<<endl;
+        cout<<"KURSUNUZA KAYITLI OGRENCI SAYISI= "<<kayitliogrencisayisi<<endl<<endl;
         dosya.close();
 	
 	
-	{//------------------------------KAYITLI ÖÐRENCÝ LÝSTESÝ------------------------------
+	{//------------------------------KAYITLI Ã–ÃRENCÃ LÃSTESÃ------------------------------
 		
 	    ifstream dosya;
     	dosya.open("ogrenci.dat",ios::binary);
     	
-    	cout<<"KURSUNUZDA TOPLAM "<<kayitliogrencisayisi<<" ADET ÖÐRENCÝ BULUNMAKTADIR."<<endl<<endl;
+    	cout<<"KURSUNUZDA TOPLAM "<<kayitliogrencisayisi<<" ADET OGRENCI BULUNMAKTADIR."<<endl<<endl;
     	if(kayitliogrencisayisi>0)
 		{
 			for(int k=0;k<kayitliogrencisayisi;k++)
 			{
-				cout<<k+1<<". ÖÐRENCÝNÝN BÝLGÝLERÝ"<<endl;
+				cout<<k+1<<". OGRENCININ BILGILER"<<endl;
 				dosya.seekg(k*sizeof(ogrenci));
 				dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
-				cout<<endl<<"ADI:              "<<ogrenci.ad<<endl;
-				cout<<"YAÞI:             "<<ogrenci.yas<<endl;
-				cout<<"EÐÝTÝM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
-				cout<<"ANADÝLÝ:          "<<ogrenci.anadili<<endl;
-				cout<<"DERS ALACAÐI DÝL: "<<ogrenci.dersalacagidil<<endl;
-				cout<<"DÝL SEVÝYESÝ:     "<<ogrenci.alacagidildekiseviyesi<<endl;
-				cout<<"DERS SAATÝ:       "<<ogrenci.derssaati<<endl<<endl;
+				cout<<endl<<  "ADI:              "<<ogrenci.ad<<endl;
+					cout<<"YASI:             "<<ogrenci.yas<<endl;
+					cout<<"EGITIM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
+					cout<<"ANADILI:          "<<ogrenci.anadili<<endl;
+					cout<<"DERS ALACAGI DIL: "<<ogrenci.dersalacagidil<<endl;
+					cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
+					cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl<<endl;
 			}
     	}
     }
    
-    {//------------------------------KAYITTAN ÖÐRENCÝ BULMA------------------------------
+    {//------------------------------KAYITTAN OGRENCI BULMA------------------------------
         
 	    char isim[20];
 		bool kayit;
@@ -166,7 +165,7 @@ int main()
 		ifstream dosya;
 		dosya.open("ogrenci.dat",ios::binary);
 		
-		cout<<"KAYDINI BULMAK ÝSTEDÝÐÝNÝZ ÖÐRENCÝNÝN ADINI GÝRÝNÝZ:   ";
+		cout<<"KAYDINI BULMAK ISTEDIGINIZ OGRENCININ ADINI GIRINIZ:   ";
 		cin>>isim;
 		
 		for(int k=0;k<kayitliogrencisayisi;k++)
@@ -176,28 +175,28 @@ int main()
 			
 			if(strcmp(ogrenci.ad,isim)==0)
 			{
-				cout<<endl<<"ÖÐRENCÝNÝN BÝLGÝLERÝ "<<k+1<<". KAYITTA BULUNMUÞTUR..."<<endl;
+				cout<<endl<<"OGRENCININ BILGILERI "<<k+1<<". KAYITTA BULUNMUSTUR..."<<endl;
 				kayit=true;
                 
-				cout<<endl<<"---BÝLGÝLERÝ---"<<endl<<endl;
+				cout<<endl<<"---BILGILERI---"<<endl<<endl;
 				
 				dosya.seekg(k*sizeof(ogrenci));
 				dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 				
 				cout<<"ADI:              "<<ogrenci.ad<<endl;
-				cout<<"YAÞI:             "<<ogrenci.yas<<endl;
-				cout<<"EÐÝTÝM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
-				cout<<"ANADÝLÝ:          "<<ogrenci.anadili<<endl;
-				cout<<"DERS ALACAÐI DÝL: "<<ogrenci.dersalacagidil<<endl;
-				cout<<"DÝL SEVÝYESÝ:     "<<ogrenci.alacagidildekiseviyesi<<endl;
-				cout<<"DERS SAATÝ:       "<<ogrenci.derssaati<<endl<<endl;
+				cout<<"YASI:             "<<ogrenci.yas<<endl;
+				cout<<"EGITIM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
+				cout<<"ANADILI:          "<<ogrenci.anadili<<endl;
+				cout<<"DERS ALACAGI DIL: "<<ogrenci.dersalacagidil<<endl;
+				cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
+				cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl<<endl;
 		    }
 		}if((!kayit))
-		cout<<isim<<" ADINDA ÖÐRENCÝ KAYDI BULUNAMAMIÞTIR..."<<endl<<endl;
+		cout<<isim<<" ADINDA OGRENCI KAYDI BULUNAMAMISTIR..."<<endl<<endl;
 		dosya.close();
 	}
 	
-	{//------------------------------ÖÐRENCÝ KAYDI SÝLME------------------------------ 
+	{//------------------------------OGRENCI KAYDI SILME------------------------------ 
 	
 	    char isim[20];
 		char secim=' ';
@@ -206,7 +205,7 @@ int main()
 		ifstream dosya;
 		dosya.open("ogrenci.dat",ios::binary);
 		
-		cout<<"KAYDINI SÝLMEK ÝSTEDÝÐÝNÝZ ÖÐRENCÝNÝN ADINI GÝRÝNÝZ:   ";
+		cout<<"KAYDINI SILMEK ISTEDIGINIZ OGRENCININ ADINI GIRINIZ:   ";
 		cin>>isim;
 		
 		cout<<endl;
@@ -217,20 +216,20 @@ int main()
 			dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 			if(strcmp(ogrenci.ad,isim)==0)
 			{
-				cout<<"ÖÐRENCÝNÝN BÝLGÝLERÝ"<<endl<<endl;
+				cout<<"OGRENCININ BILGILERI"<<endl<<endl;
 				
 				dosya.seekg(j*sizeof(ogrenci));
 				dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 				
 				cout<<"ADI:              "<<ogrenci.ad<<endl;
-				cout<<"YAÞI:             "<<ogrenci.yas<<endl;
-				cout<<"EÐÝTÝM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
-				cout<<"ANADÝLÝ:          "<<ogrenci.anadili<<endl;
-				cout<<"DERS ALACAÐI DÝL: "<<ogrenci.dersalacagidil<<endl;
-				cout<<"DÝL SEVÝYESÝ:     "<<ogrenci.alacagidildekiseviyesi<<endl;
-				cout<<"DERS SAATÝ:       "<<ogrenci.derssaati<<endl;
+				cout<<"YASI:             "<<ogrenci.yas<<endl;
+				cout<<"EGITIM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
+				cout<<"ANADILI:          "<<ogrenci.anadili<<endl;
+				cout<<"DERS ALACAGI DIL: "<<ogrenci.dersalacagidil<<endl;
+				cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
+				cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl;
 				
-				cout<<"KAYDINI SÝLMEK ÝSTEDÝÐÝNÝZ ÖÐRENCÝ BUMU ?[E/H] ";
+				cout<<"KAYDINI SILMEK ISTEDIGINIZ OGRENCI BUMU ?[E/H] ";
 			    secim=getche();
 			    if(secim=='H'||secim=='h')
 			    {
@@ -277,17 +276,17 @@ int main()
 			cout<<endl;
 			remove("ogrenci.dat");
 			rename("YEDEK.DAT","ogrenci.dat");
-			cout<<isim<<" ADINDAKÝ ÖÐRENCÝNÝN KAYDI SÝLÝNMÝÞTÝR...";
+			cout<<isim<<" ADINDAKI OGRENCININ KAYDI SILINMISTIR...";
 	    }
 		else
 		{
 			cout<<endl;
 			remove("YEDEK.DAT");
-			cout<<isim<<" ADINDA ÖÐRENCÝ KAYDI BULUNAMAMIÞTIR...";
+			cout<<isim<<" ADINDA OGRENCI KAYDI BULUNAMAMISTIR...";
 		}
 	}
     
-    {//------------------------------ÖÐRENCÝ KAYDI DÜZELTME------------------------------
+    {//------------------------------OGRENCI KAYDI DÃœZELTME------------------------------
    	
 	    cout<<endl<<endl;
 		char isim[20];
@@ -298,7 +297,7 @@ int main()
 		dosya.open("ogrenci.dat",ios::binary);
 		
 		cout<<endl;
-		cout<<"KAYDINI DÜZELTMEK ÝSTEDÝÐÝNÝZ ÖÐRENCÝNÝZ ADINI GÝRÝNÝZ:   ";
+		cout<<"KAYDINI DÃœZELTMEK ISTEDIGINIZ OGRENCININ ADINI GIRINIZ:   ";
 		cin>>isim;
 		
 		for(int j=0;j<kayitliogrencisayisi;j++)
@@ -311,14 +310,14 @@ int main()
 				var=true;
 				cout<<endl;
 				cout<<endl<<"ADI:              "<<ogrenci.ad<<endl;
-				cout<<"YAÞI:             "<<ogrenci.yas<<endl;
-				cout<<"EÐÝTÝM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
-				cout<<"ANADÝLÝ:          "<<ogrenci.anadili<<endl;
-				cout<<"DERS ALACAÐI DÝL: "<<ogrenci.dersalacagidil<<endl;
-				cout<<"DÝL SEVÝYESÝ:     "<<ogrenci.alacagidildekiseviyesi<<endl;
-				cout<<"DERS SAATÝ:       "<<ogrenci.derssaati<<endl<<endl;
+					cout<<"YASI:             "<<ogrenci.yas<<endl;
+					cout<<"EGITIM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
+					cout<<"ANADILI:          "<<ogrenci.anadili<<endl;
+					cout<<"DERS ALACAGI DIL: "<<ogrenci.dersalacagidil<<endl;
+					cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
+					cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl<<endl;
 				
-				cout<<"KAYDINI DÜZELTMEK ÝSTEDÝÐÝNÝZ ÖÐRENCÝ BU MU [E/H]?  ";
+				cout<<"KAYDINI DÃœZELTMEK ISTEDIGINIZ OGRENCI BU MU [E/H]?  ";
 				secim=getch();
 				
 				if(secim=='E'||secim=='e')
@@ -327,71 +326,71 @@ int main()
 					dosya.open("YEDEK.DAT",ios::app|ios::binary);
 					
 					cout<<endl;
-					cout<<"ÖÐRENCÝNÝZ ADINI GÝRÝNÝZ:  ";
+					cout<<"OGRENCININ ADINI GIRINIZ:  ";
 					cin>>ogrenci.ad;
 		
              	    cout<<endl;
    		
-		            cout<<"ÖÐRENCÝNÝN YAÞINI GÝRÝNÝZ:  ";
+		            cout<<"OGRENCININ YASINI GIRINIZ:  ";
 	 	            cin>>ogrenci.yas;
 		                      
 		            cout<<endl;
 		
-		            cout<<"ÝLKOKUL        "<<endl;
+		            cout<<"ILKOKUL        "<<endl;
 		            cout<<"ORTAOKUL       "<<endl;
-		            cout<<"LÝSE           "<<endl;
-		            cout<<"ÜNÝVERSÝTE     "<<endl;
-		            cout<<"MEZUN-ÇALIÞAN  "<<endl;
-		            cout<<"ÖÐRENCÝNÝN EÐÝTÝM DURUMUNU GÝRÝNÝZ:   ";
+		            cout<<"LISE           "<<endl;
+		            cout<<"ÃœNIVERSITE     "<<endl;
+		            cout<<"MEZUN-Ã‡ALISAN  "<<endl;
+		            cout<<"OGRENCININ EGITIM DURUMUNU GIRINIZ:   ";
 		            cin>>ogrenci.egitimdurumu;
 		
 	                cout<<endl<<endl;
 		            
-					cout<<"TÜRKÇE       "<<endl
-	                    <<"ÝNGÝLÝZCE    "<<endl
-	                    <<"ALMANCA      "<<endl
-	                    <<"FRANSIZCA    "<<endl
-	                    <<"RUSÇA        "<<endl
-	                    <<"ÝSPANYOLCA   "<<endl
-                        <<"ÇÝNCE        "<<endl
-	                    <<"PORTEKÝZCE   "<<endl
-	                    <<"ARAPÇA       "<<endl
-                        <<"HÝNTÇE       "<<endl;
-	                cout<<"ÖÐRENCÝNÝN ANADÝLÝNÝ GÝRÝNÝZ:   ";
+			    cout<<"TURKCE       "<<endl
+	                    	<<"INGILIZCE    "<<endl
+	                    	<<"ALMANCA      "<<endl
+	                    	<<"FRANSIZCA    "<<endl
+	                    	<<"RUSCA        "<<endl
+	                    	<<"ISPANYOLCA   "<<endl
+                    	        <<"CINCE        "<<endl
+	                    	<<"PORTEKIZCE   "<<endl
+	                    	<<"ARAPCA       "<<endl
+                        	<<"HINTCE       "<<endl;
+	                cout<<"OGRENCININ ANADILINI GIRINIZ:   ";
 		            cin>>ogrenci.anadili;
 		
 	    	        cout<<endl<<endl;
 		
-		            cout<<"TÜRKÇE       "<<endl
-	                    <<"ÝNGÝLÝZCE    "<<endl
-	                    <<"ALMANCA      "<<endl
-	                    <<"FRANSIZCA    "<<endl
-	                    <<"RUSÇA        "<<endl
-	                    <<"ÝSPANYOLCA   "<<endl
-                        <<"ÇÝNCE        "<<endl
-	                    <<"PORTEKÝZCE   "<<endl
-	                    <<"ARAPÇA       "<<endl
-                        <<"HÝNTÇE       "<<endl;
-		            cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ DÝLÝ GÝRÝNÝZ:   ";
+		            cout<<"TURKCE       "<<endl
+	                    	<<"INGILIZCE    "<<endl
+	                    	<<"ALMANCA      "<<endl
+	                    	<<"FRANSIZCA    "<<endl
+	                    	<<"RUSCA        "<<endl
+	                    	<<"ISPANYOLCA   "<<endl
+                    	        <<"CINCE        "<<endl
+	                    	<<"PORTEKIZCE   "<<endl
+	                    	<<"ARAPCA       "<<endl
+                        	<<"HINTCE       "<<endl;
+		            cout<<"OGRENCININ DERS ALMAK ISTEDIGI DILI GIRINIZ:   ";
 		            cin>>ogrenci.dersalacagidil;
 		
 	                cout<<endl<<endl;
 	                
-            		cout<<"A1  (Baþlancýç seviyesi)  "<<endl
-		                <<"A2                        "<<endl
-		                <<"B1                        "<<endl
-		                <<"B2                        "<<endl
+            		cout<<"A1  (Baslangic seviyesi)  "<<endl
+		            <<"A2                        "<<endl
+		            <<"B1                        "<<endl
+		            <<"B2                        "<<endl
 	                    <<"C1                        "<<endl
-	                    <<"C2  (Ýleri seviye)        "<<endl;
-		            cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ DÝL SEVÝYESÝNÝ GÝRÝNÝZ:   ";
+	                    <<"C2  (Ileri seviye)        "<<endl;
+		            cout<<"OGRENCININ DERS ALMAK ISTEDIGI DIL SEVIYESINI GIRINIZ:   ";
 		            cin>>ogrenci.alacagidildekiseviyesi;
 	
 	                cout<<endl<<endl;
 	                
-		            cout<<"SAAT 10:00 daki ders için 10   "<<endl
-		                <<"SAAT 14:00 daki ders için 14   "<<endl
-		                <<"SAAT 18:00 daki ders için 18   "<<endl;
-		            cout<<"ÖÐRENCÝNÝN DERS ALMAK ÝSTEDÝÐÝ SAATÝ GÝRÝNÝZ :   ";
+		            cout<<"SAAT 10:00 daki ders iÃ§in 10   "<<endl
+		                <<"SAAT 14:00 daki ders iÃ§in 14   "<<endl
+		                <<"SAAT 18:00 daki ders iÃ§in 18   "<<endl;
+		            cout<<"OGRENCININ DERS ALMAK ISTEDIGI SAATI GIRINIZ :   ";
 		            cin>>ogrenci.derssaati;
 		
 					dosya.write(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
@@ -443,7 +442,7 @@ int main()
 			cout<<endl;
 			remove("ogrenci.dat");
 			rename("YEDEK.DAT","ogrenci.dat");
-			cout<<"ÖÐRENCÝNÝN KAYIDI DÜZELTÝLMÝÞTÝR..."<<endl<<endl;
+			cout<<"OGRENCININ KAYIDI DUZENLENMISTIR..."<<endl<<endl;
 	    }
 	    else
 		{
@@ -453,28 +452,28 @@ int main()
 		}
    }
    
-   {//------------------------------GÜNCELLENMÝÞ OLAN ÖÐRENCÝ LÝSTESÝ------------------------------
+   {//------------------------------GUNCELLENMIS OLAN OGRENCI LISTESI------------------------------
 		
 	    ifstream dosya;
     	dosya.open("ogrenci.dat",ios::binary);
     	
-    	cout<<"GÜNCELLENMÝÞ KAYITLARDA "<<kayitliogrencisayisi-1<<" ADET ÖÐRENCÝ BULUNMAKTADIR."<<endl<<endl;
+    	cout<<"GUNCELLENMIS KAYITLARDA "<<kayitliogrencisayisi-1<<" ADET OGRENCI BULUNMAKTADIR."<<endl<<endl;
     	if(kayitliogrencisayisi>0)
 		{
 			for(int k=0;k<kayitliogrencisayisi-1;k++)
 			{
-				cout<<k+1<<". ÖÐRENCÝNÝN BÝLGÝLERÝ"<<endl<<endl;
+				cout<<k+1<<". OGRENCININ BILGILERI"<<endl<<endl;
 				
 				dosya.seekg(k*sizeof(ogrenci));
 				dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 				
 				cout<<"ADI:              "<<ogrenci.ad<<endl;
-				cout<<"YAÞI:             "<<ogrenci.yas<<endl;
-				cout<<"EÐÝTÝM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
-				cout<<"ANADÝLÝ:          "<<ogrenci.anadili<<endl;
-				cout<<"DERS ALACAÐI DÝL: "<<ogrenci.dersalacagidil<<endl;
-				cout<<"DÝL SEVÝYESÝ:     "<<ogrenci.alacagidildekiseviyesi<<endl;
-				cout<<"DERS SAATÝ:       "<<ogrenci.derssaati<<endl<<endl;
+				cout<<"YASI:             "<<ogrenci.yas<<endl;
+				cout<<"EGITIM DURUMU:    "<<ogrenci.egitimdurumu<<endl;
+				cout<<"ANADILI:          "<<ogrenci.anadili<<endl;
+				cout<<"DERS ALACAGI DIL: "<<ogrenci.dersalacagidil<<endl;
+				cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
+				cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl<<endl;
 			}
     	}
    }
