@@ -28,7 +28,7 @@ int main()
 	bilgiler ogrenci;
 	char secim;
 	
-	cout<<"DİL KURSU ÖĞRENCİ İŞLERİ OTOMASYONU"<<endl<<endl;
+	cout<<"DIL KURSU OGRENCI ISLERI OTOMASYONU"<<endl<<endl;
 	
 	{ //------------------------------OGRENCI KAYIDI YAPMAK------------------------------
 	   
@@ -47,11 +47,11 @@ int main()
 		
 		cout<<endl;
 		
-		cout<<"ILKOKUL        "<<endl;
-		cout<<"ORTAOKUL       "<<endl;
-		cout<<"LISE           "<<endl;
-		cout<<"UNIVERSITE     "<<endl;
-		cout<<"MEZUN-ÇALISAN  "<<endl;
+		cout<<    "ILKOKUL        "<<endl
+			<<"ORTAOKUL       "<<endl
+			<<"LISE           "<<endl
+			<<"UNIVERSITE     "<<endl
+		<	<"MEZUN-CALISAN  "<<endl;
 		cout<<"OGRENCININ EGITIM DURUMUNU GIRINIZ:   ";
 		cin>>ogrenci.egitimdurumu;
 		
@@ -65,8 +65,8 @@ int main()
 	            <<"ISPANYOLCA   "<<endl
                     <<"CINCE        "<<endl
 	            <<"PORTEKIZCE   "<<endl
-	            <<"ARAPÇA       "<<endl
-                    <<"HINTÇE       "<<endl;
+	            <<"ARAPCA       "<<endl
+                    <<"HINTCE       "<<endl;
 	    cout<<"OGRENCININ ANADILINI GIRINIZ:   ";
 		cin>>ogrenci.anadili;
 		
@@ -80,8 +80,8 @@ int main()
 	            <<"ISPANYOLCA   "<<endl
                     <<"CINCE        "<<endl
 	            <<"PORTEKIZCE   "<<endl
-	            <<"ARAPÇA       "<<endl
-                    <<"HINTÇE       "<<endl;
+	            <<"ARAPCA       "<<endl
+                    <<"HINTCE       "<<endl;
 		cout<<"ORENCININ DERS ALMAK ISTEDIGI DILI GIRINIZ:   ";
 		cin>>ogrenci.dersalacagidil;
 		
@@ -119,7 +119,7 @@ int main()
 	  
 	cout<<endl<<endl;   
 	    
-		//------------------------------KAYIT SAYISINI ÖÐRENME------------------------------
+		//------------------------------KAYIT SAYISINI OGRENME------------------------------
 
 
         ifstream dosya;
@@ -133,7 +133,7 @@ int main()
         dosya.close();
 	
 	
-	{//------------------------------KAYITLI ÖÐRENCÝ LÝSTESÝ------------------------------
+	{//------------------------------KAYITLI OGRENCI LISTESI------------------------------
 		
 	    ifstream dosya;
     	dosya.open("ogrenci.dat",ios::binary);
@@ -143,7 +143,7 @@ int main()
 		{
 			for(int k=0;k<kayitliogrencisayisi;k++)
 			{
-				cout<<k+1<<". OGRENCININ BILGILER"<<endl;
+				cout<<k+1<<". OGRENCININ BILGILERI"<<endl;
 				dosya.seekg(k*sizeof(ogrenci));
 				dosya.read(reinterpret_cast<char*>(&ogrenci),sizeof(ogrenci));
 				cout<<endl<<  "ADI:              "<<ogrenci.ad<<endl;
@@ -286,7 +286,7 @@ int main()
 		}
 	}
     
-    {//------------------------------OGRENCI KAYDI DÜZELTME------------------------------
+    {//------------------------------OGRENCI KAYDI DUZELTME------------------------------
    	
 	    cout<<endl<<endl;
 		char isim[20];
@@ -317,7 +317,7 @@ int main()
 					cout<<"DIL SEVIYESI:     "<<ogrenci.alacagidildekiseviyesi<<endl;
 					cout<<"DERS SAATI:       "<<ogrenci.derssaati<<endl<<endl;
 				
-				cout<<"KAYDINI DÜZELTMEK ISTEDIGINIZ OGRENCI BU MU [E/H]?  ";
+				cout<<"KAYDINI DUZELTMEK ISTEDIGINIZ OGRENCI BU MU [E/H]?  ";
 				secim=getch();
 				
 				if(secim=='E'||secim=='e')
@@ -339,7 +339,7 @@ int main()
 		            cout<<"ILKOKUL        "<<endl;
 		            cout<<"ORTAOKUL       "<<endl;
 		            cout<<"LISE           "<<endl;
-		            cout<<"ÜNIVERSITE     "<<endl;
+		            cout<<"UNIVERSITE     "<<endl;
 		            cout<<"MEZUN-ÇALISAN  "<<endl;
 		            cout<<"OGRENCININ EGITIM DURUMUNU GIRINIZ:   ";
 		            cin>>ogrenci.egitimdurumu;
